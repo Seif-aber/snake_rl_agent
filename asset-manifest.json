@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/snake_rl_agent/static/css/main.f9be23f8.css",
+    "main.js": "/snake_rl_agent/static/js/main.ff715cf5.js",
+    "index.html": "/snake_rl_agent/index.html",
+    "main.f9be23f8.css.map": "/snake_rl_agent/static/css/main.f9be23f8.css.map",
+    "main.ff715cf5.js.map": "/snake_rl_agent/static/js/main.ff715cf5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9be23f8.css",
+    "static/js/main.ff715cf5.js"
+  ]
+}
