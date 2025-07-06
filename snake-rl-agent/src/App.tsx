@@ -77,7 +77,7 @@ const GameContainer: React.FC = () => {
     return (
         <div className="App">
             <header className="app-header">
-                <h1>🐍 Snake RL Agent</h1>
+🐍                <h1>🐍 Snake RL Agent 🐍</h1>
                 <p>Watch an AI learn to play Snake using Q-Learning</p>
             </header>
             
@@ -102,12 +102,6 @@ const GameContainer: React.FC = () => {
                     />
                 </div>
             </main>
-
-            {/* Analytics Dashboard */}
-            {/* <AnalyticsDashboard 
-                isAgentPlaying={gameState.isAgentPlaying}
-                currentScore={gameState.score}
-            /> */}
         </div>
     );
 };
