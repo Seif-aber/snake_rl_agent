@@ -1,0 +1,111 @@
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(3px, 1vh, 10px);
+  width: 100%;
+}
+
+.game-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #333;
+  background-color: #2d3748;
+  border-radius: 8px;
+  position: relative;
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+  max-width: 95vw;
+  max-height: 50vh;
+  /* Add subtle border styling to indicate wrapping */
+  border-style: dashed; /* Change from solid to dashed to indicate wrapping */
+  border-color: #4a90e2; /* Different color to indicate wrapping borders */
+}
+
+.food {
+  position: absolute;
+  background-color: #e53e3e;
+  border: 2px solid #c53030;
+  box-shadow: 0 0 10px rgba(229, 62, 62, 0.6);
+  border-radius: 50%;
+}
+
+.snake {
+  position: absolute;
+  background-color: #48bb78;
+  border: 1px solid #38a169;
+  border-radius: 2px;
+}
+
+.snake-head {
+  background-color: #38a169 !important;
+  border: 2px solid #2f855a;
+}
+
+.game-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: clamp(10px, 3vh, 20px);
+  border-radius: 10px;
+  text-align: center;
+  z-index: 10;
+  max-width: 80%;
+}
+
+.game-overlay h2 {
+  margin: 0 0 clamp(5px, 1vh, 10px) 0;
+  font-size: clamp(1rem, 4vw, 1.8rem);
+}
+
+.game-overlay p {
+  margin: 0;
+  font-size: clamp(0.8rem, 2.5vw, 1.1rem);
+  opacity: 0.8;
+}
+
+/* Optional: Add glow effect when near borders */
+.snake-wrapping {
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .game-container {
+    padding: 2px;
+  }
+  
+  .game-board {
+    max-width: 98vw;
+    max-height: 45vh;
+    border-width: 2px;
+  }
+  
+  .game-overlay {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-board {
+    max-height: 40vh;
+    border-width: 1px;
+    border-radius: 4px;
+  }
+  
+  .game-overlay {
+    padding: 8px;
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 320px) {
+  .game-board {
+    max-height: 35vh;
+  }
+}

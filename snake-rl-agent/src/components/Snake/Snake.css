@@ -1,0 +1,11 @@
+.snake {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border-radius: 3px;
+  position: absolute;
+}
+
+.snake-head {
+  background-color: darkgreen;
+}
